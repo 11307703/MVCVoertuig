@@ -1,0 +1,7 @@
+﻿@model IEnumerable<string>
+
+
+@foreach(var merkVoertuig in Model)
+{
+	<a class="btn btn-primary link-warning" asp-controller="Voertuig" asp-action="Merk" asp-route-merk="@merkVoertuig">@merkVoertuig</a>
+}

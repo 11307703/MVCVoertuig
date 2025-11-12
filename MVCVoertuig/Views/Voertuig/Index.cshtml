@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Voertuig>
+@{
+	ViewData["Title"] = "Index";
+}
+
+<p>
+	<a asp-action="Create">Create new</a>
+</p>
+
+@foreach(var voertuig in Model)
+{
+	<partial name="VoertuigCard" model="voertuig" />
+}
